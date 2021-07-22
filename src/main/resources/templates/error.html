@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--在使用时需添加 xmlns:th="http://www/thymeleaf.org"-->
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+这是一个自定义异常的界面
+
+<!--获取到报错的信息 等,按需求获取所需的报错信息
+    注:msg必须与hanlde层中自定义的一致
+    e.getMessage() :报错的信息
+    e.getClass()   :报错的类型
+-->
+<p th:text="${msg}"></p>
+</body>
+</html>
